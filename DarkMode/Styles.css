@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    transition: background-color .5s, color .5s;
+}
+
+#circle{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform .5s, background-color .5s;
+    will-change: transform;
+}
+
+#container{
+    margin: 50px auto;
+    height: 60px;
+    width: 110px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+svg{
+    height: 40px;
+    width: 40px;
+}
+
+h1{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 5rem;
+}
+
+.white-color{
+    color: white;
+}
+
+.dark-color{
+ background-color: black;
+}
+
+.dark-mode{
+    transform: translate(60px,0);
+}
